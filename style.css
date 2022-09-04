@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(71, 71, 71);
+    color: white;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.todo {
+    padding: 2rem 1rem;
+}
+
+.todo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-input {
+    width: 22rem;
+    margin: 0.4rem;
+}
+
+.todo-button {
+    background-color: #000;
+    text-decoration: none;
+    border:none;
+}
+
+.todo-button> img {
+    margin-top: 0.2rem;
+    width: 1.5rem;
+    background-size: cover;
+}
