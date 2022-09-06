@@ -7,6 +7,7 @@
 h1 {
     font-size: 2rem;
     margin: 2rem;
+    text-align: center;
 }
 
 body {
@@ -14,37 +15,94 @@ body {
     background: rgb(71, 71, 71);
     color: white;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
+    padding: 1rem;
     align-items: center;
-    background-color: #000;
-}
-
-.todo {
-    padding: 2rem 1rem;
+    background-color: rgb(94, 94, 94);
 }
 
 .todo-form {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .todo-input {
-    width: 22rem;
-    margin: 0.4rem;
+    width: 25rem;
+    padding: 0.35rem;
+    margin-right: 0.1rem;
+    outline: none;
 }
 
 .todo-button {
-    background-color: #000;
-    text-decoration: none;
-    border:none;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 2rem;
+    font-size: 1.5rem;
 }
 
-.todo-button> img {
-    margin-top: 0.2rem;
-    width: 1.5rem;
-    background-size: cover;
+.todo-button:hover {
+    background: rgb(182, 182, 182);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 40%;
+    list-style: none;
+}
+
+.todo {
+    padding: 0.25rem;
+    margin: 0.5rem;
+    background: #fff;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.completed-btn,
+.edit-btn,
+.trash-btn {
+    width: 2rem;
+    height: 1.7rem;
+    border: none;
+    
+}
+
+.completed-btn {
+    background: rgb(92, 204, 92);
+    margin-right: 0.3rem;
+}
+
+.edit-btn {
+    background: #fff;
+    margin-right: 0.3rem;
+    border: 1px solid rgb(145, 144, 144);
+}
+
+.trash-btn {
+    background: rgb(209, 79, 79);
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
 }
