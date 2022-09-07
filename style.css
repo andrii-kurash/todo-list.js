@@ -24,6 +24,13 @@ body {
     background-color: rgb(94, 94, 94);
 }
 
+.todo-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
 .todo-form {
     display: flex;
     justify-content: center;
@@ -84,25 +91,82 @@ body {
     width: 2rem;
     height: 1.7rem;
     border: none;
-    
+    cursor: pointer;
+}
+
+.completed-btn img,
+.edit-btn img,
+.trash-btn img {
+    width: 1rem;
+    pointer-events: none;
 }
 
 .completed-btn {
-    background: rgb(92, 204, 92);
     margin-right: 0.3rem;
+}
+
+.completed-btn:hover {
+    background: rgb(92, 204, 92);
+    transition: all .5s;
 }
 
 .edit-btn {
-    background: #fff;
     margin-right: 0.3rem;
-    border: 1px solid rgb(145, 144, 144);
 }
 
-.trash-btn {
-    background: rgb(209, 79, 79);
+.edit-btn:hover {
+    background: rgb(206, 206, 206);
+    transition: all .5s;
+}
+
+.trash-btn:hover {
+    background: rgb(255, 193, 193);
+    transition: all .5s;
 }
 
 .completed {
     text-decoration: line-through;
     opacity: 0.5;
 }
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    transition: all .5s;
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem 0.6rem;
+    width: 8rem;
+}
+
+.select {
+    position: relative;
+}
+
+.select:after {
+    content: "\25BC";
+    background: rgb(71, 71, 71);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.1rem 0.4rem;
+    pointer-events: none;
+}
+
+.select:hover:after {
+    color: rgb(71, 71, 71);
+    background: #fff;
+    transition: all .5s;
+}
+
+
+
+

@@ -16,12 +16,21 @@
         <header>
             <h1>My Todo List</h1>
         </header>
-        <form class="todo-form">
-            <input class="todo-input" type="text">
-            <button class="todo-button">
-                +
-            </button>
-        </form>
+        <div class="todo-top">
+            <form class="todo-form">
+                <input class="todo-input" type="text">
+                <button class="todo-button">
+                    +
+                </button>
+            </form>
+            <div class="select">
+                <select name="todos" class="filter-todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+        </div>
         <div class="todo-container">
             <ul class="todo-list"></ul>
         </div>
